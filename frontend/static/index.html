@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zurich Insurance LC/NC Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🏢</span>
+                <span class="logo-text">Zurich Insurance</span>
+                <span class="logo-sub">LC/NC Platform</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn" data-view="dashboard">Dashboard</button>
+                <button class="nav-btn" data-view="claims">Claims</button>
+                <button class="nav-btn" data-view="designer">Workflow Designer</button>
+                <button class="nav-btn" data-view="tasks">Task Queue</button>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div id="dashboard-view" class="view active">
+                <div id="dashboard-content"></div>
+            </div>
+            <div id="claims-view" class="view">
+                <div id="claims-content"></div>
+            </div>
+            <div id="designer-view" class="view">
+                <div id="designer-content"></div>
+            </div>
+            <div id="tasks-view" class="view">
+                <div id="tasks-content"></div>
+            </div>
+            <div id="claim-detail-view" class="view">
+                <div id="claim-detail-content"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
